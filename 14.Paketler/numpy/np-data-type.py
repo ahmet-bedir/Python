@@ -17,3 +17,8 @@ arr = np.array([4.32, 6.41, 8.4])
 new_arr = arr.astype(int)
 print(new_arr, new_arr.dtype)  # [4 6 8] int64
 
+################
+arr = np.array([111, 111111, 1111111111], dtype="i")
+print(arr, arr.dtype)  # int32 (i ve i4 -> int32, i8 -> int64)
+
+    
