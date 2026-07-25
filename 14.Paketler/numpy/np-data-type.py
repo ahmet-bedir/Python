@@ -10,7 +10,7 @@ arr = np.array([1.22, 5.38, 8.41], dtype=np.float32)
 print(arr.dtype)  # int8 (=1byte)
 
 arr = np.array("ananaslar")
-print(arr.dtype)  # <U9
+print(arr.dtype)  # <U9 (unicode)
 
 # tür dönüşümü [float->int]
 arr = np.array([4.32, 6.41, 8.4])
