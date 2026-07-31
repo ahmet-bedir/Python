@@ -7,7 +7,7 @@ set_random = set(dir(random))
 print(set_os & set_sys & set_random)
 # Bu kodlar, os, sys ve random modüllerinin kesişim kümesini, yani her üç modülde ortak olarak bulunan nitelikleri verecektir:
 # {'__doc__', '__package__', '__loader__', '__name__', '__spec__'}
-
+q 
 # Kodların yeniden kullanılabilir özellikte olması (code reusability) programcılıkta önemli bir niteliktir:
 moduller = ['os', 'sys', 'random', 'sozluk_modulu']
 print("Modüller : ", *moduller, sep='  ')
