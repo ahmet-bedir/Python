@@ -1,6 +1,6 @@
 import sys
 
 s = sys
-print(s(dir).index("path"))
+print(dir(s).index("path"))
 
 print(s.path)
