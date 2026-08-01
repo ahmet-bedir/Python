@@ -1,3 +1,5 @@
 .idea/*
 
-p.py
+./p.py
+
+__pycache__/*

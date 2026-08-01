@@ -1,4 +1,15 @@
-### Modüller
+"""
+PEP 8'e göre import'lar şu sırada ve gruplar halinde yazılır:
+
+1.Standart kütüphane (os, sys, json)
+
+2.Üçüncü parti paketler (requests, numpy)
+
+3.Yerel modüller (matematik_yardimci)
+
+Her grup arasında boş satır bırak.
+"""
+
 import os
 
 if os.name == 'posix':
