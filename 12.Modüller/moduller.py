@@ -35,19 +35,26 @@ import webbrowser as web
 web.open('www.duckduckgo.com')
 
 
-### "import os" gibi bir komutla bütün o isimleri içe aktarmak yerine, yalnızca kullanacağınız isimleri içe aktarmayı tercihde edebilirsiniz. Mesela os modülünün yalnızca name niteliğini ve listdir fonksiyonunu kullanacaksanız:
-from os import name, listdir #bir modül içindeki bütün fonksiyon ve nitelikleri içe aktarmak için: "from os import *" kullanılır. Böylece os modülü içindeki bütün fonksiyon ve nitelikleri, başlarına modül adını eklemeye gerek olmadan kullanabilirsiniz.
-print(name)
-#print(getcwd()) #hata!
+### "import os" komutuyla bütün fonksiyon ve nitelikleri içe aktarmak yerine, yalnızca kullanacağınız isimleri içe aktarabilirsiniz. Mesela os modülünün yalnızca 'name' niteliğini ve 'listdir' fonksiyonunu kullanacaksanız:
+from os import name, listdir  
+
+print(getcwd())  # hata!
 print(listdir())
+print(name)  # Bu durumda os.name komutu hata verecektir. Çünkü biz from os import name komutunu verdiğimizde, os modülünü değil, bu modül içindeki bir nitelik olan name’i içe aktarmış oluyoruz. Dolayısıyla os ismini kullanamıyoruz sadece nitelik veya fonksiyon ismini modül öneki olmadan kullanılır.
 
+##############
+from os import path as p
+from os import listdir as ld
+# Bir modül içindeki bütün fonksiyon ve nitelikleri içe aktarmak için: "from os import *" kullanılır. Böylece os modülü içindeki bütün fonksiyon ve nitelikleri, başlarına modül adını eklemeye gerek olmadan kullanabilirsiniz. Ancak bu yöntem pek tavsiye edilmez. Çünkü bu şekilde, modül içindeki bütün isimleri kontrolsüz bir şekilde mevcut ortama ‘boşaltmış’ oluyoruz. Mesela eğer sys modülü bu şekilde içe aktarılmadan önce version diye başka bir değişken tanımlamışsanız, modül içe aktarıldıktan sonra, önceden tanımladığınız bu version değişkeninin değeri kaybolacaktır.
 
+##############
 # path
 import sys
-print(sys.path) # Python bir modül dosyasını ararken, import komutunun verildiği dosyanın dizini ile birlikte, sys.path çıktısında görünen dizinlerin içine bakar.
+print(sys.path)  # Python bir modül dosyasını ararken, import komutunun verildiği dosyanın dizini ile birlikte, sys.path çıktısında görünen dizinlerin içine bakar.
 
 sys.path.append('/home/ahmet/Masaüstü/') # path listesinin sonuna yeni dizin yani masaüstü dizinini ekliyoruz. (sys.path.insert(0, 'dizin/adı') kodu path listesinin en başına ekleme yapar)
 print(sys.path)
-import modul #böylece masaüstünde bulunan "modul" modülüne ulaşabiliriz.
+import modul  # böylece masaüstünde bulunan "modul" modülüne ulaşabiliriz.
+
 print(modul.degisken)
 modul.fonksiyon()
