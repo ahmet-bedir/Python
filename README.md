@@ -6,7 +6,7 @@ Dosya Yükleme İşlemi Devam Etmektedir...
 
 ---
 
-Son Güncelleme : 06/2026
+###### Son Güncelleme : 08/2026
 
 ---
 
