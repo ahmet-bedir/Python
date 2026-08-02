@@ -14,9 +14,11 @@ def artir(sayac, kelime):
     return sayac
 
 def ekrana_bas(kelime):
-    mesaj = "{} kelimesinde {} sesli harf var."
-    print(mesaj.format(kelime, artir(sayac, kelime)))
-
+    if sayac != 0:
+        print(f"'{kelime}' kelimesinde {artir(sayac, kelime)} sesli harf var.")
+    else:
+        print(f"'{kelime}' kelimesinde sesli harf yok!")
+        
 def calistir():
     kelime = kelime_sor()
     ekrana_bas(kelime)
