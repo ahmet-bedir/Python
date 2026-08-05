@@ -9,7 +9,7 @@ PEP 8'e göre import'lar şu sırada ve gruplar halinde yazılır:
 
 Her grup arasında boş satır bırak.
 """
-
+##############
 import os
 
 if os.name == 'posix':
@@ -24,23 +24,23 @@ print(os.getcwd()) # o anda hangi dizin altında bulunduğunuzu öğrenmek için
 #
 print(os.makedirs('DATA')) # o anda içinde bulunduğunuz dizinde yeni bir dizin oluşturmak için.
 
-
-# subprocess modülü, harici komutları Python içinden çalıştırabilmemizi sağlayan bir araçtır.
+##############
+### subprocess modülü, harici komutları Python içinden çalıştırabilmemizi sağlayan bir araçtır.
 import subprocess as sp
 sp.call(['bash','komut.sh'])
 
-
-# webbrowser modülü, bilgisayarımızda kurulu internet tarayıcısını kullanarak internet sitelerini açabilmemizi sağlar.
+##############
+### webbrowser modülü, bilgisayarımızda kurulu internet tarayıcısını kullanarak internet sitelerini açabilmemizi sağlar.
 import webbrowser as web
 web.open('www.duckduckgo.com')
 
-
+##############
 ### "import os" komutuyla bütün fonksiyon ve nitelikleri içe aktarmak yerine, yalnızca kullanacağınız isimleri içe aktarabilirsiniz. Mesela os modülünün yalnızca 'name' niteliğini ve 'listdir' fonksiyonunu kullanacaksanız:
 from os import name, listdir  
 
 print(getcwd())  # hata!
 print(listdir())
-print(name)  # Bu durumda os.name komutu hata verecektir. Çünkü biz from os import name komutunu verdiğimizde, os modülünü değil, bu modül içindeki bir nitelik olan name’i içe aktarmış oluyoruz. Dolayısıyla os ismini kullanamıyoruz sadece nitelik veya fonksiyon ismini modül öneki olmadan kullanılır.
+print(name)  # Bu durumda os.name komutu hata verecektir. Çünkü biz from os import name komutunu verdiğimizde, os modülünü değil, bu modül içindeki bir nitelik olan name’i içe aktarmış oluyoruz. Dolayısıyla os ismini kullanamıyoruz sadece nitelik veya fonksiyon ismi modül öneki olmadan kullanılır.
 
 ##############
 from os import path as p
@@ -60,7 +60,7 @@ print(modul.degisken)
 modul.fonksiyon()
 
 ##############
-# __all__ listesi içinde belirttiğimiz fonksiyonlar içe aktarılır. Bu listeyi kullanarak, yıldızlı içe aktarmalarda nelerin içe aktarılıp nelerin dışarıda bırakılacağını kontrol edebilirsiniz. Yalnız unutmamanız gereken nokta, bu yöntemin öteki içe aktarma türlerinde hiçbir işe yaramayacağıdır.
+### fonksiyonların hepsi değilde, __all__ listesi içinde belirttiğimiz fonksiyonlar içe aktarılır. Bu listeyi kullanarak, yıldızlı içe aktarmalarda nelerin içe aktarılıp nelerin dışarıda bırakılacağını kontrol edebilirsiniz. Yalnız unutmamanız gereken nokta, bu yöntemin öteki içe aktarma türlerinde hiçbir işe yaramayacağıdır.
 __all__ = ['fonk1', 'fonk2', 'fonk3']
 
 from modül import *

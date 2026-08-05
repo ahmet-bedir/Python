@@ -14,7 +14,10 @@
 # from modul import __fonk5
 # from modul import _fonk4
 
-print(_fonk4())
+# print(_fonk4())
 
 ##############
-# Yalnızca kendi belirlediğiniz isimlerin içe aktarılmasını için:
+# Yalnızca kendi belirlediğiniz isimlerin içe aktarılması için __all__ adlı bir listeden yararlanabilirsiniz. Bu yöntem yannız yıldızlı içe aktarmada işe yarar.
+from modul import *
+
+print(dir())  # ['__all__', '__annotations__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_fonk4', 'fonk1', 'fonk3_']

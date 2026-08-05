@@ -1,3 +1,5 @@
+__all__ = ['fonk1', 'fonk3_', '_fonk4']
+
 _x = "değişken"
 
 def fonk1():
