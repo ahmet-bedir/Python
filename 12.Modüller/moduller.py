@@ -58,3 +58,10 @@ import modul  # böylece masaüstünde bulunan "modul" modülüne ulaşabiliriz.
 
 print(modul.degisken)
 modul.fonksiyon()
+
+##############
+# __all__ listesi içinde belirttiğimiz fonksiyonlar içe aktarılır. Bu listeyi kullanarak, yıldızlı içe aktarmalarda nelerin içe aktarılıp nelerin dışarıda bırakılacağını kontrol edebilirsiniz. Yalnız unutmamanız gereken nokta, bu yöntemin öteki içe aktarma türlerinde hiçbir işe yaramayacağıdır.
+__all__ = ['fonk1', 'fonk2', 'fonk3']
+
+from modül import *
+
