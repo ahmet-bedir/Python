@@ -22,21 +22,9 @@ print(ortak_nitelikler(moduller))
 
 """
 ###
-moduller = ['os','random']
-for modul in moduller:
-    __import__(modul)
-    
 os = __import__('os')
 print(os.getcwd())
 
 
-### __doc__ Niteliği
-#import uyg1.sozluk_modulu ; print(uyg1.sozluk_modulu.__doc__)
-
-
-
-### __loader__ Niteliği
-
-### __spec__ Niteliği
-
-### __package__ Niteliği
+### __doc__ Niteliği: Modüllerin __doc__ niteliğini kulanarak, bir modül dosyasının en başında bulunan belgelendirme dizilerine (docstring veya documentation string) ilgili modüle ilişkin kısa açıklama kılavuzlarına erişebiliriz.
+import os ; print(os.__doc__)

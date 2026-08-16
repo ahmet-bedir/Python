@@ -1,6 +1,10 @@
 """
-belge dizisi (docstring) veya
+Belge dizisi (docstring) veya
 belgelendirme dizisi (documentation string)
+Sözlük modülü
+_ ara
+- ekle
+- sil
 """
 sozluk = {
 	"kitap"       : "book",
