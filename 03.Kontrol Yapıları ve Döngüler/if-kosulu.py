@@ -93,6 +93,7 @@ status = "Geçti" if _not > 50 else "Kaldı"
 print(f"{status}")
 
 # Değişken ataması
+yas = 18
 durum = "yetişkin" if yas >= 18 else "çocuk"
 
 # Return ifadesinde
@@ -120,7 +121,7 @@ falsy_degerler = [
 ]
 
 for deger in falsy_degerler:
-    print(f"{str(deger):12} -> bool: {bool(deger)}")# Bunların hepsi False olarak değerlendirilir:
+    print(f"{str(deger):12} -> bool: {bool(deger)}")  # Bunların hepsi False olarak değerlendirilir:
 falsy_degerler = [
     False,      # Boolean False
     None,       # None
