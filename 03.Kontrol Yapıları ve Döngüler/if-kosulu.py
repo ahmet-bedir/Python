@@ -121,23 +121,8 @@ falsy_degerler = [
 ]
 
 for deger in falsy_degerler:
-    print(f"{str(deger):12} -> bool: {bool(deger)}")  # Bunların hepsi False olarak değerlendirilir:
-falsy_degerler = [
-    False,      # Boolean False
-    None,       # None
-    0,          # Sıfır (int)
-    0.0,        # Sıfır (float)
-    0j,         # Sıfır (complex)
-    "",          # Boş string
-    [],         # Boş liste
-    {},         # Boş dictionary
-    set(),      # Boş set
-    (),         # Boş tuple
-    range(0),   # Boş range
-]
-
-for deger in falsy_degerler:
     print(f"{str(deger):12} -> bool: {bool(deger)}")
+# Bunlar dışındaki her şey truthy'dir. "False" string'i bile truthy'dir (boş olmayan string olduğu için)!
 
 ###############
 a = [1, 2, 3]
@@ -152,6 +137,7 @@ print(a is c)   # True  — aynı nesne
 x = None
 if x is None:      # ✅ Doğru
     print("x None")
+
 if x == None:      # ❌ Çalışır ama tavsiye edilmez
     print("x None")
 # == değer eşitliği, is kimlik eşitliği (aynı nesne mi?) kontrol eder. None, True, False kontrollerinde her zaman is kullan.
