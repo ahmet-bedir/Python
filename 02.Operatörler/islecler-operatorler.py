@@ -166,12 +166,12 @@ if not aktif:
 
 ############
 ### Short-Circuit (Kısa Devre)
-# and: İlk False'ta durur
+# and: İlk False'ta durur (sonuç: False)
 x = 0
 if x != 0 and 10 / x > 2:  # 10/0 hatası oluşmaz!
     print("OK")
 
-# or: İlk True'da durur
+# or: İlk True'da durur (sonuç : True)
 isim = "" or "Anonim"  # "Anonim"
 print(isim)
 
