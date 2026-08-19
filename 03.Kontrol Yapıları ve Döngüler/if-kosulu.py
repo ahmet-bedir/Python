@@ -1,12 +1,14 @@
-# koşul True olduğunda kod bloğu çalışır, False olduğunda kod bloğu çalışmaz.
-# if <koşul>: 
-#    <kod bloğu>
+"""
+Koşul True olduğunda kod bloğu çalışır, False olduğunda kod bloğu çalışmaz.
+if <koşul>: 
+   <kod bloğu>
 
-# if True:
-#     print("kod bloğu...")
-#
-# if (False):
-#     print("kod bloğu...")
+if True:
+    print("kod bloğu...")
+
+if (False):
+    print("kod bloğu...")
+"""
 
 ###
 kosul = (3 == 5)
@@ -25,8 +27,8 @@ login = (email == "inf@gmail.com") and (parola == "123")
 if login:
     print("giriş başarılı...")
 
-### verimsiz yöntem, çünkü 10'un altında bir değer girilmesi durumunda hem birinci hem ikinci if bloğu çalışır.
-# print("ilk yöntem.")
+### Verimsiz yöntem, çünkü 10'un altında bir değer girilmesi durumunda hem birinci hem ikinci if bloğu çalışır.
+# İlk yöntem.
 # sayi = int(input("Sayı Giriniz : "))
 #
 # if sayi < 10:
@@ -42,7 +44,7 @@ if login:
 #     print("sayı 30'dan büyüktür.")
 #
 ### if bize olası bütün sonuçları listeler, elif ise sadece doğru olan ilk sonucu verir.
-# print("ikinci yöntem.")
+# İkinci yöntem.
 # sayi = int(input("Sayı Giriniz : "))
 #
 # if sayi < 10:
@@ -140,5 +142,5 @@ if x is None:      # ✅ Doğru
 
 if x == None:      # ❌ Çalışır ama tavsiye edilmez
     print("x None")
-# == değer eşitliği, is kimlik eşitliği (aynı nesne mi?) kontrol eder. None, True, False kontrollerinde her zaman is kullan.
+# == değer eşitliği, is kimlik eşitliği (aynı nesne mi?) kontrol eder. None kontrollerinde her zaman is kullan.
 
