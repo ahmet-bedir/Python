@@ -3,18 +3,18 @@ range() fonksiyonu belli bir aralıkta bulunan sayıları göstermek için kulla
 range(ilk_sayı, son_sayı, atlama_degeri)
 '''
 for i in range(0, 11):
-    print(i, end=' ') #0'dan 11'e kadar olan sayılar.(0 dahil, 11 hariç)
+    print(i, end=' ')  # 0'dan 11'e kadar olan sayılar.(0 dahil, 11 hariç)
 print('\n')
-for i in range(11): #0'dan 11'e kadar
+for i in range(11):  # 0'dan 11'e kadar
     print(i, end=' ')
 print('\n')    
-for i in range(3, 11): #3'den 11'e kadar
+for i in range(3, 11):  # 3'den 11'e kadar
     print(i, end=' ')
 print('\n')
-for i in range(0, 11, 2): #0'dan 11'e kadar iki atlamalı
+for i in range(0, 11, 2):  # 0'dan 11'e kadar iki atlamalı
     print(i, end=' ')
 print("\n")
-for i in range(10, 0, -1): #sayıları tersten sıralar
+for i in range(10, 0, -1):  # sayıları tersten sıralar
     print(i, end=' ')
 print('\n')
 

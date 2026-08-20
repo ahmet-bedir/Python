@@ -20,18 +20,19 @@ while a < len(tr_harfler):
 
 
 '''
-sayilar = 123456789 #hata! çünkü sayılar üzerinde döngü kuramayız.
+sayilar = 123456789  # hata! çünkü sayılar üzerinde döngü kuramayız.
 for sayi in sayilar:
     print(sayi)
 '''
-#Burada str_sayilar adlı değişkenin her bir öğesini bizim belirlediğimiz sayi adlı değişkenine aktardıkdan sonra, int() fonksiyonu yardımıyla bu öğeleri tek tek sayıya çevirdik ve her bir öğeyi 2 ile çarptık.
+
+
+# Burada str_sayilar adlı değişkenin her bir öğesini bizim belirlediğimiz sayi adlı değişkenine aktardıkdan sonra, int() fonksiyonu yardımıyla bu öğeleri tek tek sayıya çevirdik ve her bir öğeyi 2 ile çarptık.
 str_sayilar = "123456789"
 for sayi in str_sayilar:
     print(int(sayi) * 2, end='  ')
-print('\n', '-'*40, sep='')
 
-#Burada int_sayilar adlı değişkeni önce stringe çevirip her bir öğesini bizim belirlediğimiz sayi adlı değişkenine aktardıkdan sonra, int() fonksiyonu yardımıyla bu öğeleri tek tek sayıya çevirdik ve her bir öğeyi 2 ile çarptık.
+
+# Burada int_sayilar adlı değişkeni önce stringe çevirip her bir öğesini bizim belirlediğimiz sayi adlı değişkenine aktardıkdan sonra, int() fonksiyonu yardımıyla bu öğeleri tek tek sayıya çevirdik ve her bir öğeyi 2 ile çarptık.
 int_sayilar = 123456789
 for sayi in str(int_sayilar):
     print(int(sayi) * 2, end='  ')
-print('\n', '-'*40, sep='')
