@@ -1,15 +1,15 @@
-print('-'*40)
 tr_harfler = "çÇğĞıİöÖşŞüÜ"
-#Burada öncelikle tr_harfler adlı bir değişken tanımladık. Bu değişken Türkçeye özgü harfleri tutuyor. Daha sonra bir for döngüsü kurarak, tr_harfler adlı değişkenin her bir öğesini tek tek harf adlı değişkene atıp ekrana yazdırdık.
+
 print("for döngüsü ile türkçe harfler.")
 for harf in tr_harfler:
     print(harf, end='  ')
-print('\n','-'*40, sep='')
+# Tanımladığımız tr_harfler değişkeni türkçeye özgü harfleri tutuyor. Daha sonra bir for döngüsü kurarak, tr_harfler adlı değişkenin her bir öğesini tek tek harf adlı değişkene atıp ekrana yazdırdık.
+
 
 ###
 print("print fonksiyonu ile türkçe harfler.")
 print(*tr_harfler, sep='  ')
-print('-'*40)
+
 
 ### for döngüsü, üzerinde döngü kurulabilecek veri tiplerinin her bir öğesinin üzerinden tek tek geçer ve bu öğelerin her biri üzerinde bir işlem yapar. while döngüsü ise herhangi bir ifadenin bool değerini kontrol eder ve bu değerin bool değeri False olana kadar, belirlenen işlemi yapmayı sürdürür.
 print("while döngüsü ile türkçe harfler.")
@@ -17,7 +17,7 @@ a = 0
 while a < len(tr_harfler):
     print(tr_harfler[a], end='  ')
     a += 1
-print('\n','-'*40, sep='')
+
 
 '''
 sayilar = 123456789 #hata! çünkü sayılar üzerinde döngü kuramayız.

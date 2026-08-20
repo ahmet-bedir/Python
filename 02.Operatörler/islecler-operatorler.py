@@ -179,7 +179,7 @@ print(isim)
 print(1 and 2 and 3)        # 3 (hepsi truthy → son değer)
 print(1 and 0 and 3)        # 0 (ilk falsy)
 print(0 or "" or "hello")   # "hello" (ilk truthy)
-print(0 or "" or [])         # [] (hepsi falsy → son değer)
+print(0 or "" or [])        # [] (hepsi falsy → son değer)
 
 # Varsayılan Değer Deseni
 kullanici_adi = input("Kullanıcı adı: ") or "misafir"
