@@ -1,4 +1,4 @@
-# standart çıktı(ekran) kalıcı olarak dosyaya aktarma.
+### standart çıktı(ekran) kalıcı olarak dosyaya aktarma.
 import sys
 
 isim = "Ahmet"
